@@ -1,9 +1,18 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "pluginId": "openai",
-  "protocol": "text-multipart",
   "endpoint": "https://api.openai.com/v1/audio/transcriptions",
   "credentialSetting": "api-key",
   "credentialHeader": "authorization",
-  "model": "gpt-transcribe"
+  "credentialPrefix": "Bearer ",
+  "maxAudioBytes": 25000000,
+  "fileField": "file",
+  "form": {
+    "model": "gpt-transcribe"
+  },
+  "response": {
+    "text": "/text",
+    "language": "/languages",
+    "languageItem": "/code"
+  }
 }
