@@ -7,3 +7,5 @@ This repository is being initialized. See the Arrumo workspace roadmap for imple
 Copyright © 2026 DEVS AI Unipessoal LDA. Licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
 For custom AI solutions for your company, visit [DEVS AI](https://aidevs.pt).
+
+The bundled transcription adapter uses `transcription.json` to declare the OpenAI endpoint, model, and SDK credential field. It returns transcript text and detected language metadata. See the [OpenAI file transcription guide](https://developers.openai.com/api/docs/guides/speech-to-text).
