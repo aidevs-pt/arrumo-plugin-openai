@@ -13,3 +13,12 @@ The bundled transcription adapter uses `transcription.json` to declare the OpenA
 Delivery subtitles use `transcription-timed.json`, which requests timestamped
 speaker segments from the diarization model. Arrumo uses the returned segment
 times as caption boundaries. [OpenAI transcription response formats](https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create/)
+
+## Package a release candidate
+
+From this checkout, use the Arrumo Plugin SDK packager with the adapter files
+listed explicitly. Record the SDK commit and the SHA-256 printed by the tool.
+
+```sh
+python /path/to/plugin-sdk/tools/package_plugin.py . plugin.zip --include LICENSE --include README.md --include transcription.json --include transcription-timed.json
+```
