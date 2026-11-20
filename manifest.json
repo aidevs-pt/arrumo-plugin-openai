@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "id": "openai",
-  "name": "Arrumo OpenAI Plugin",
-  "description": "The default OpenAI adapter for transcription and image generation.",
+  "name": "OpenAI",
+  "description": "Backup transcription and image generation for thumbnails and style references.",
   "capabilities": {
     "transcription": {
       "name": "Transcription",
@@ -16,8 +16,8 @@
   "settings": [
     {
       "id": "api-key",
-      "label": "API key",
-      "description": "Credential used for API calls to OpenAI.",
+      "label": "OpenAI API key",
+      "description": "Used for transcription and images. Stored in the system vault; agents can use it through Arrumo but never read it.",
       "kind": "secret",
       "scope": "workspace",
       "required": true
