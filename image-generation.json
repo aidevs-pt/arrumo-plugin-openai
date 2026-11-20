@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "pluginId": "openai",
+  "endpoint": "https://api.openai.com/v1/images/generations",
+  "credentialSetting": "api-key",
+  "credentialHeader": "authorization",
+  "credentialPrefix": "Bearer ",
+  "model": {
+    "default": "gpt-image-2.5-flare",
+    "setting": "image-model"
+  },
+  "aspectRatios": {
+    "16:9": "1536x1024",
+    "9:16": "1024x1536",
+    "1:1": "1024x1024"
+  },
+  "request": {
+    "model": "{model}",
+    "prompt": "{prompt}",
+    "size": "{aspectRatio}",
+    "n": 1
+  },
+  "response": {
+    "image": "/data/0/b64_json"
+  },
+  "maxImageBytes": 20971520
+}
