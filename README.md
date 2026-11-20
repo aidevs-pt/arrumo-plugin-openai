@@ -9,3 +9,7 @@ Copyright © 2026 DEVS AI Unipessoal LDA. Licensed under the [GNU Affero General
 For custom AI solutions for your company, visit [DEVS AI](https://aidevs.pt).
 
 The bundled transcription adapter uses `transcription.json` to declare the OpenAI endpoint, model, and SDK credential field. It returns transcript text and detected language metadata. See the [OpenAI file transcription guide](https://developers.openai.com/api/docs/guides/speech-to-text).
+
+Delivery subtitles use `transcription-timed.json`, which requests timestamped
+speaker segments from the diarization model. Arrumo uses the returned segment
+times as caption boundaries. [OpenAI transcription response formats](https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create/)

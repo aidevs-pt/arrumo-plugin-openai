@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "pluginId": "openai",
+  "endpoint": "https://api.openai.com/v1/audio/transcriptions",
+  "credentialSetting": "api-key",
+  "credentialHeader": "authorization",
+  "credentialPrefix": "Bearer ",
+  "maxAudioBytes": 25000000,
+  "fileField": "file",
+  "form": {
+    "model": "gpt-4o-transcribe-diarize",
+    "response_format": "diarized_json",
+    "chunking_strategy": "auto"
+  },
+  "response": {
+    "text": "/text",
+    "language": "/languages",
+    "languageItem": "/code",
+    "words": {
+      "items": "/segments",
+      "text": "/text",
+      "start": "/start",
+      "end": "/end",
+      "speaker": "/speaker"
+    }
+  }
+}
