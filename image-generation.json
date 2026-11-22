@@ -23,5 +23,11 @@
   "response": {
     "image": "/data/0/b64_json"
   },
-  "maxImageBytes": 20971520
+  "maxImageBytes": 20971520,
+  "references": {
+    "encoding": "multipart",
+    "endpoint": "https://api.openai.com/v1/images/edits",
+    "fileField": "image[]",
+    "maxImages": 4
+  }
 }
