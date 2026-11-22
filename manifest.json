@@ -43,5 +43,54 @@
       "es": "OpenAI transcribe cuando tu primera opción no puede, y crea miniaturas e imágenes a partir de tus referencias de estilo.",
       "pt": "A OpenAI transcreve quando a tua primeira opção não consegue, e cria miniaturas e imagens a partir das tuas referências de estilo."
     }
+  },
+  "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><rect width=\"32\" height=\"32\" rx=\"8\" fill=\"#0f766e\"/><path d=\"M7 12h3M7 16h6M7 20h4\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"15\" y=\"9\" width=\"11\" height=\"14\" rx=\"2.5\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M16 21l3-3 2 2 4-4\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+  "translations": {
+    "es": {
+      "description": "Transcripción de respaldo y generación de imágenes para miniaturas y referencias de estilo.",
+      "capabilities": {
+        "transcription": {
+          "name": "Transcripción",
+          "description": "Convierte el audio en texto con marcas de tiempo."
+        },
+        "image-generation": {
+          "name": "Generación de imágenes",
+          "description": "Genera miniaturas e imágenes a partir de descripciones."
+        }
+      },
+      "settings": {
+        "api-key": {
+          "label": "Clave de API de OpenAI",
+          "description": "Se usa para transcripción e imágenes. Se guarda en el almacén del sistema; los agentes pueden usarla a través de Arrumo, pero nunca leerla."
+        },
+        "image-model": {
+          "label": "Modelo de imagen",
+          "description": "El modelo de OpenAI para miniaturas e imágenes. Bórralo para usar el predeterminado actual del complemento."
+        }
+      }
+    },
+    "pt": {
+      "description": "Transcrição de reserva e geração de imagens para miniaturas e referências de estilo.",
+      "capabilities": {
+        "transcription": {
+          "name": "Transcrição",
+          "description": "Converte o áudio em texto com marcas de tempo."
+        },
+        "image-generation": {
+          "name": "Geração de imagens",
+          "description": "Gera miniaturas e imagens a partir de descrições."
+        }
+      },
+      "settings": {
+        "api-key": {
+          "label": "Chave de API da OpenAI",
+          "description": "Usada para transcrição e imagens. Fica guardada no cofre do sistema; os agentes podem usá-la através do Arrumo, mas nunca lê-la."
+        },
+        "image-model": {
+          "label": "Modelo de imagem",
+          "description": "O modelo OpenAI para miniaturas e imagens. Apaga-o para usar o predefinido atual do plugin."
+        }
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 [English](../en/transcription.md) · [Português](../pt/transcription.md)
 
-En los ajustes de Arrumo, abre el plugin de OpenAI y guarda una clave de API en su campo secreto. La clave del espacio de trabajo tiene prioridad sobre la clave predeterminada de la aplicación. Arrumo guarda ambas en el almacén de credenciales del sistema.
+En los ajustes de Arrumo, abre el complemento de OpenAI y guarda una clave de API en su campo secreto. La clave del espacio de trabajo tiene prioridad sobre la clave predeterminada de la aplicación. Arrumo guarda ambas en el almacén de credenciales del sistema.
 
 Elige OpenAI en el orden de proveedores de transcripción del espacio de trabajo o al añadir un proceso a la cola. El proceso conserva ese orden. Puedes colocar otro proveedor configurado después.
 
