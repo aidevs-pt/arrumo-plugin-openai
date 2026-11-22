@@ -45,7 +45,6 @@
     }
   },
   "icon": "icon.svg",
-  "iconNotice": "OpenAI and the OpenAI logo are trademarks of OpenAI.",
   "translations": {
     "es": {
       "description": "Transcripción de respaldo y generación de imágenes para miniaturas y referencias de estilo.",
@@ -68,8 +67,7 @@
           "label": "Modelo de imagen",
           "description": "El modelo de OpenAI para miniaturas e imágenes. Bórralo para usar el predeterminado actual del complemento."
         }
-      },
-      "iconNotice": "OpenAI y el logotipo de OpenAI son marcas de OpenAI."
+      }
     },
     "pt": {
       "description": "Transcrição de reserva e geração de imagens para miniaturas e referências de estilo.",
@@ -92,8 +90,7 @@
           "label": "Modelo de imagem",
           "description": "O modelo OpenAI para miniaturas e imagens. Apaga-o para usar o predefinido atual do plugin."
         }
-      },
-      "iconNotice": "OpenAI e o logótipo da OpenAI são marcas da OpenAI."
+      }
     }
   }
 }

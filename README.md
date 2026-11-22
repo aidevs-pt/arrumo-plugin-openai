@@ -4,19 +4,11 @@ The default OpenAI adapter for transcription and image generation.
 
 ## Icon and trademarks
 
-`icon.svg` uses the official OpenAI mark, only to identify the service this
-plugin connects to. OpenAI and the OpenAI logo are trademarks of OpenAI. This plugin is not affiliated with or endorsed by
-OpenAI, and the mark is not covered by this repository's license.
-
-Copyright © 2026 DEVS AI Unipessoal LDA. Licensed under the [GNU Affero General Public License v3.0](LICENSE).
-
-For custom AI solutions for your company, visit [DEVS AI](https://aidevs.pt).
-
-The bundled transcription adapter uses `transcription.json` to declare the OpenAI endpoint, model, and SDK credential field. It returns transcript text and detected language metadata. See the [OpenAI file transcription guide](https://developers.openai.com/api/docs/guides/speech-to-text).
-
-Delivery subtitles use `transcription-timed.json`, which requests timestamped
-speaker segments from the diarization model. Arrumo uses the returned segment
-times as caption boundaries. [OpenAI transcription response formats](https://developers.openai.com/api/reference/resources/audio/subresources/transcriptions/methods/create/)
+`icon.svg` is a generic symbol drawn for Arrumo (a sound wave beside a page and a frame, for transcription and images), covered by this repository's
+license. It is not the provider's logo: the provider has not published permission for its
+logo to appear in another app's interface, so the plugin does not use it. The name is used
+only to say which service the plugin connects to; this plugin is not affiliated with or
+endorsed by the provider.
 
 ## Transcription and subtitles
 
