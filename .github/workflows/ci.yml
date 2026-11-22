@@ -1,0 +1,66 @@
+name: CI
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check the manifest, icon, translations and docs
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, py_compile, re, sys
+
+          root = pathlib.Path(".")
+          manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+          problems = []
+          for field in ("schemaVersion", "id", "name", "description", "capabilities"):
+              if field not in manifest:
+                  problems.append(f"manifest.json lacks {field}")
+
+          icon = manifest.get("icon")
+          if icon:
+              path = root / icon
+              data = path.read_bytes() if path.is_file() else b""
+              text = data.decode("utf-8", "replace").lower()
+              if not data:
+                  problems.append(f"{icon} is missing")
+              elif len(data) > 8 * 1024:
+                  problems.append(f"{icon} is over 8 KiB")
+              elif "<svg" not in text or re.search(r"<script|<image|<foreignobject|href|url\(|\son[a-z]+\s*=", text):
+                  problems.append(f"{icon} must be a self-contained SVG without script, links or embedded content")
+          if "iconNotice" in manifest and not icon:
+              problems.append("iconNotice needs an icon")
+
+          declared = {
+              "settings": {item["id"] for item in manifest.get("settings", [])},
+              "actions": {item["id"] for item in manifest.get("actions", [])},
+              "capabilities": set(manifest.get("capabilities", {})),
+          }
+          for language, entry in manifest.get("translations", {}).items():
+              if language not in ("en", "es", "pt"):
+                  problems.append(f"translations.{language} is not a supported language")
+              for group, ids in declared.items():
+                  for key in entry.get(group, {}):
+                      if key not in ids:
+                          problems.append(f"translations.{language}.{group}.{key} names nothing the manifest declares")
+
+          docs = root / "docs"
+          if docs.is_dir():
+              pages = {language: sorted(p.name for p in (docs / language).glob("*.md")) for language in ("en", "es", "pt")}
+              if len({tuple(names) for names in pages.values()}) != 1:
+                  problems.append(f"docs differ between languages: {pages}")
+
+          for script in root.glob("tools/*.py"):
+              py_compile.compile(str(script), doraise=True)
+
+          print("\n".join(problems) or "Plugin checks passed.")
+          sys.exit(1 if problems else 0)
+          PY
