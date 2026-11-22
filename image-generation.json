@@ -6,7 +6,7 @@
   "credentialHeader": "authorization",
   "credentialPrefix": "Bearer ",
   "model": {
-    "default": "gpt-image-2.5-flare",
+    "default": "gpt-image-2.6-sunburst",
     "setting": "image-model"
   },
   "aspectRatios": {

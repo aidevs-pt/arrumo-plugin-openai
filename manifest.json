@@ -25,10 +25,11 @@
     {
       "id": "image-model",
       "label": "Image model",
-      "description": "OpenAI model used for thumbnails and images. Leave empty to use the plugin's current default.",
+      "description": "OpenAI model used for thumbnails and images. Clear it to use the plugin's current default.",
       "kind": "string",
       "scope": "workspace",
-      "required": false
+      "required": false,
+      "default": "gpt-image-2.6-sunburst"
     }
   ]
 }

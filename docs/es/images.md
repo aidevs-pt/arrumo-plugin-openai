@@ -8,4 +8,4 @@ Cuando un formato pide miniaturas, el agente del proceso escribe una indicación
 
 ## Elige el modelo
 
-El plugin usa `gpt-image-2.5-flare` por defecto. Para usar un modelo más reciente, indica **Modelo de imagen** en los ajustes del plugin para la aplicación o un espacio de trabajo. Déjalo vacío para seguir el modelo predeterminado del plugin.
+El plugin usa `gpt-image-2.6-sunburst` por defecto. Para usar un modelo más reciente, indica **Modelo de imagen** en los ajustes del plugin para la aplicación o un espacio de trabajo. Déjalo vacío para seguir el modelo predeterminado del plugin.

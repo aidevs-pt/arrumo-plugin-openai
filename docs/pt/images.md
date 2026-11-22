@@ -8,4 +8,4 @@ Quando um formato pede miniaturas, o agente da execução escreve uma instruçã
 
 ## Escolha o modelo
 
-O plugin usa `gpt-image-2.5-flare` por omissão. Para usar um modelo mais recente, defina **Modelo de imagem** nas definições do plugin para a aplicação ou um espaço de trabalho. Deixe vazio para seguir o modelo predefinido do plugin.
+O plugin usa `gpt-image-2.6-sunburst` por omissão. Para usar um modelo mais recente, defina **Modelo de imagem** nas definições do plugin para a aplicação ou um espaço de trabalho. Deixe vazio para seguir o modelo predefinido do plugin.

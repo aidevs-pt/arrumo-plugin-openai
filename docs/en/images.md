@@ -8,4 +8,4 @@ When a format asks for thumbnails, the run's agent writes one image prompt per t
 
 ## Choose the model
 
-The plugin uses `gpt-image-2.5-flare` by default. To use a newer model, set **Image model** in the plugin's settings for the app or a workspace. Leave it empty to follow the plugin's default.
+The plugin uses `gpt-image-2.6-sunburst` by default. To use a newer model, set **Image model** in the plugin's settings for the app or a workspace. Leave it empty to follow the plugin's default.
