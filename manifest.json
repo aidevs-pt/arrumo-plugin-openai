@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 8,
   "id": "openai",
   "name": "OpenAI",
   "description": "Backup transcription and image generation for thumbnails and style references.",
@@ -31,5 +31,17 @@
       "required": false,
       "default": "gpt-image-2.6-sunburst"
     }
-  ]
+  ],
+  "introduction": {
+    "headline": {
+      "en": "A backup for words and pictures",
+      "es": "Un respaldo para palabras e imágenes",
+      "pt": "Uma alternativa para palavras e imagens"
+    },
+    "body": {
+      "en": "OpenAI transcribes when your first choice can't, and makes thumbnails and images from your style references.",
+      "es": "OpenAI transcribe cuando tu primera opción no puede, y crea miniaturas e imágenes a partir de tus referencias de estilo.",
+      "pt": "A OpenAI transcreve quando a tua primeira opção não consegue, e cria miniaturas e imagens a partir das tuas referências de estilo."
+    }
+  }
 }
