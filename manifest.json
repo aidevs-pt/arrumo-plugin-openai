@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 8,
+  "schemaVersion": 10,
   "id": "openai",
   "name": "OpenAI",
   "description": "Backup transcription and image generation for thumbnails and style references.",
@@ -20,7 +20,8 @@
       "description": "Used for transcription and images. Stored in the system vault; agents can use it through Arrumo but never read it.",
       "kind": "secret",
       "scope": "workspace",
-      "required": true
+      "required": true,
+      "helpUrl": "https://platform.openai.com/api-keys"
     },
     {
       "id": "image-model",
