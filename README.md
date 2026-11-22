@@ -4,11 +4,7 @@ The default OpenAI adapter for transcription and image generation.
 
 ## Icon and trademarks
 
-`icon.svg` is a generic symbol drawn for Arrumo (a sound wave beside a page and a frame, for transcription and images), covered by this repository's
-license. It is not the provider's logo: the provider has not published permission for its
-logo to appear in another app's interface, so the plugin does not use it. The name is used
-only to say which service the plugin connects to; this plugin is not affiliated with or
-endorsed by the provider.
+`icon.svg` shows OpenAI's logo so creators recognise the service this plugin connects to. OpenAI and the OpenAI logo are trademarks of OpenAI; the manifest's `iconNotice` says so wherever Arrumo shows the icon. The logo is not covered by this repository's license, and this plugin is not affiliated with or endorsed by OpenAI. The SVG is a square without rounded corners; Arrumo rounds it. If OpenAI asks, replace the logo with a generic symbol and remove `iconNotice`.
 
 ## Transcription and subtitles
 
