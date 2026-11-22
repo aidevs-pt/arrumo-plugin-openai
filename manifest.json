@@ -44,7 +44,8 @@
       "pt": "A OpenAI transcreve quando a tua primeira opção não consegue, e cria miniaturas e imagens a partir das tuas referências de estilo."
     }
   },
-  "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 32 32\"><rect width=\"32\" height=\"32\" rx=\"8\" fill=\"#0f766e\"/><path d=\"M7 12h3M7 16h6M7 20h4\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><rect x=\"15\" y=\"9\" width=\"11\" height=\"14\" rx=\"2.5\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M16 21l3-3 2 2 4-4\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+  "icon": "icon.svg",
+  "iconNotice": "OpenAI and the OpenAI logo are trademarks of OpenAI.",
   "translations": {
     "es": {
       "description": "Transcripción de respaldo y generación de imágenes para miniaturas y referencias de estilo.",
@@ -67,7 +68,8 @@
           "label": "Modelo de imagen",
           "description": "El modelo de OpenAI para miniaturas e imágenes. Bórralo para usar el predeterminado actual del complemento."
         }
-      }
+      },
+      "iconNotice": "OpenAI y el logotipo de OpenAI son marcas de OpenAI."
     },
     "pt": {
       "description": "Transcrição de reserva e geração de imagens para miniaturas e referências de estilo.",
@@ -90,7 +92,8 @@
           "label": "Modelo de imagem",
           "description": "O modelo OpenAI para miniaturas e imagens. Apaga-o para usar o predefinido atual do plugin."
         }
-      }
+      },
+      "iconNotice": "OpenAI e o logótipo da OpenAI são marcas da OpenAI."
     }
   }
 }

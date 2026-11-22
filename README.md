@@ -2,6 +2,12 @@
 
 The default OpenAI adapter for transcription and image generation.
 
+## Icon and trademarks
+
+`icon.svg` uses the official OpenAI mark, only to identify the service this
+plugin connects to. OpenAI and the OpenAI logo are trademarks of OpenAI. This plugin is not affiliated with or endorsed by
+OpenAI, and the mark is not covered by this repository's license.
+
 Copyright © 2026 DEVS AI Unipessoal LDA. Licensed under the [GNU Affero General Public License v3.0](LICENSE).
 
 For custom AI solutions for your company, visit [DEVS AI](https://aidevs.pt).
